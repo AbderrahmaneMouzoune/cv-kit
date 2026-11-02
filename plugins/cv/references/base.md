@@ -48,7 +48,7 @@ Sections : Contexte, Ce que j'ai fait, Résultat, Ligne CV, Pitch oral.
 ## Règles communes (toutes les bases)
 
 1. Ne jamais inventer un chiffre, une techno, une date ou une responsabilité. Inconnu = `[à confirmer]` + entrée dans `A-COMPLETER.md`.
-2. Jamais de tiret cadratin (« — »). Deux-points, virgule, parenthèses.
+2. Jamais de tiret cadratin (caractère U+2014). Deux-points, virgule, parenthèses.
 3. Un chiffre reste attaché à la réalisation qui le porte.
 4. Distinguer « j'ai fait » de « l'équipe a fait » (« contribution à », « co-conception »).
 5. Ton sobre : verbes d'action, pas d'adjectifs vendeurs.
