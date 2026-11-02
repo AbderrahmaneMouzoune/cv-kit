@@ -6,10 +6,10 @@ Le plugin ne contient aucune donnée : chaque personne a son propre repo privé 
 
 ## Installer
 
-`YouzouneDev` est un compte GitHub personnel (pas une organisation) : l'accès aux repos privés passe par les collaborateurs du repo, et claude.ai lit le repo via la Claude GitHub App installée sur ce compte.
+Ce repo et `cv-base-template` sont publics (aucune donnée personnelle) : aucune invitation ni Claude GitHub App n'est nécessaire pour la marketplace. Seules les bases `cv-base` de chacun sont privées.
 
-- **claude.ai (organisation)** : Organization settings > Plugins, ajouter la marketplace GitHub `YouzouneDev/cv-kit`, activer `cv` pour les membres concernés.
-- **Claude Code** : automatique dans un repo créé depuis `cv-base-template` (voir son `.claude/settings.json`), sinon `/plugin marketplace add YouzouneDev/cv-kit` puis `/plugin install cv@cv-kit`.
+- **claude.ai (organisation)** : Organization settings > Plugins, ajouter la marketplace GitHub `AbderrahmaneMouzoune/cv-kit`, activer `cv` pour les membres concernés.
+- **Claude Code** : automatique dans un repo créé depuis `cv-base-template` (voir son `.claude/settings.json`), sinon `/plugin marketplace add AbderrahmaneMouzoune/cv-kit` puis `/plugin install cv@cv-kit`.
 
 ## Faire évoluer
 
