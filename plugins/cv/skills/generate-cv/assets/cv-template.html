@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>{{NOM}} : CV {{TITRE}}</title>
+<style>
+  @page { size: A4; margin: 14mm 15mm; }
+  :root { --ink:#141414; --muted:#5f5f5f; --line:#d9d9d9; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family: "Inter", "Helvetica Neue", Arial, sans-serif; font-size:9.5pt; line-height:1.42; color:var(--ink); }
+  a { color:inherit; text-decoration:none; border-bottom:1px solid var(--line); }
+  h1 { font-size:20pt; margin:0; letter-spacing:.5px; }
+  .title { font-size:11pt; font-weight:600; margin:2px 0 4px; }
+  .contact { color:var(--muted); font-size:8.8pt; }
+  h2 { font-size:9pt; letter-spacing:1.5px; margin:14px 0 6px; padding-bottom:3px; border-bottom:1px solid var(--ink); }
+  p { margin:0 0 4px; }
+  .skill-row { display:flex; gap:10px; margin-bottom:2px; }
+  .skill-label { width:130px; flex-shrink:0; font-weight:600; }
+  .job { margin-bottom:9px; break-inside:avoid; }
+  .job-head { display:flex; justify-content:space-between; align-items:baseline; }
+  .job-title { font-weight:700; }
+  .job-dates, .job-meta { color:var(--muted); font-size:8.8pt; }
+  ul { margin:3px 0 0 15px; padding:0; }
+  li { margin-bottom:2px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>{{NOM}}</h1>
+  <p class="title">{{TITRE}}</p>
+  <p class="contact">{{LOCALISATION}} · <a href="mailto:{{EMAIL}}">{{EMAIL}}</a> · {{TELEPHONE}} · <a href="https://{{LINKEDIN}}">{{LINKEDIN}}</a> · <a href="https://{{GITHUB}}">{{GITHUB}}</a> · <a href="https://{{SITE}}">{{SITE}}</a></p>
+</header>
+
+<section><h2>PROFIL</h2><p>{{ACCROCHE}}</p></section>
+
+<section><h2>COMPÉTENCES TECHNIQUES</h2>
+  <!-- une ligne par bloc, ordonnés selon l'offre -->
+  <div class="skill-row"><div class="skill-label">{{BLOC}}</div><div>{{VALEURS}}</div></div>
+</section>
+
+<section><h2>EXPÉRIENCE PROFESSIONNELLE</h2>
+  <div class="job">
+    <div class="job-head"><span class="job-title">{{INTITULE}} · {{ENTREPRISE}}</span><span class="job-dates">{{DATES}}</span></div>
+    <p class="job-meta">{{LIEU}} · {{CONTEXTE}}</p>
+    <ul><li>{{LIGNE_CV}}</li></ul>
+  </div>
+</section>
+
+<section><h2>PROJETS PERSONNELS</h2>
+  <div class="job"><div class="job-head"><span class="job-title">{{PROJET}}</span><span class="job-dates"><a href="https://{{URL}}">{{URL}}</a></span></div><p>{{DESCRIPTION}}</p></div>
+</section>
+
+<section><h2>FORMATION ET CERTIFICATIONS</h2><p>{{FORMATION}}</p></section>
+<section><h2>LANGUES</h2><p>{{LANGUES}}</p></section>
+</body>
+</html>

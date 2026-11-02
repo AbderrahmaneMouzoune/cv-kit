@@ -1,0 +1,6 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "Génère des CV ciblés depuis une base de connaissance personnelle (repo cv-base), sans rien inventer",
+  "author": { "name": "Youzoune" }
+}

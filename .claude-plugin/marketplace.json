@@ -1,0 +1,12 @@
+{
+  "name": "cv-kit",
+  "description": "Outils CV : générer des CV ciblés depuis une base de connaissance Git personnelle",
+  "owner": { "name": "Youzoune" },
+  "plugins": [
+    {
+      "name": "cv",
+      "description": "Génère des CV ciblés (HTML, PDF, TXT) depuis ta base cv-base, ajoute des réalisations, initialise une base",
+      "source": "./plugins/cv"
+    }
+  ]
+}
