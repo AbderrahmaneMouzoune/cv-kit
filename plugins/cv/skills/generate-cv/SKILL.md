@@ -32,7 +32,8 @@ Règles communes de `references/base.md`, plus : dates exactement celles de `exp
 1. Partir de `assets/cv-template.html`. Appliquer `charte.couleur` et `charte.police` de `identite.md` (défaut `#141414`, sans-serif). Si `cv/` contient un CV récent, s'aligner sur sa mise en page.
 2. PDF via Chromium headless (Playwright `page.pdf(format="A4", print_background=True)`). Vérifier : 2 pages max (1 si demandé), rien de coupé. Réduire la sélection plutôt que la police sous 9 pt.
 3. Version `cv.txt` pour les formulaires.
-4. Nommer `CV-<Prenom>-<Nom>-<Entreprise>-<AAAA-MM>.pdf` ; livrer PDF puis HTML et TXT (`present_files` dans claude.ai).
+4. Contrôles avant livraison (bloquants) : zéro tiret cadratin (U+2014) dans le HTML et le TXT ; chaque chiffre d'impact du CV se retrouve dans `realisations/` ; aucune réalisation `entretien` ou `interne` utilisée ; nombre de pages respecté. Un frontmatter YAML illisible (ex. `titre:` non quoté contenant « : ») ne doit pas faire ignorer la réalisation en silence : la lire quand même et signaler le fichier à corriger.
+5. Nommer `CV-<Prenom>-<Nom>-<Entreprise>-<AAAA-MM>.pdf` ; livrer PDF puis HTML et TXT (`present_files` dans claude.ai).
 
 ## 5. Après livraison (court)
 
