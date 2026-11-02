@@ -7,7 +7,7 @@ description: Crée la base de connaissance CV (repo cv-base) d'une personne qui 
 
 Lire `../../references/base.md`.
 
-1. **Créer le repo** depuis le template (privé) : `https://github.com/new?template_name=cv-base-template&template_owner=YouzouneDev&name=cv-base&visibility=private`. Lui donner le lien pré-rempli.
+1. **Créer le repo** depuis le template (privé) : `https://github.com/new?template_name=cv-base-template&template_owner=AbderrahmaneMouzoune&name=cv-base&visibility=private`. Lui donner le lien pré-rempli.
 2. **Collecter** : CV (PDF/DOCX), LinkedIn collé en texte (la lecture automatique de LinkedIn est bloquée), Excel, récit libre.
 3. **Extraire** : identité, postes, réalisations (une par fichier), projets perso, compétences, formation. Ne rien inventer : tout chiffre ou date incertain devient `[à confirmer]`.
 4. **Croiser les sources** et lister les incohérences (dates qui se chevauchent, intitulés différents) dans `A-COMPLETER.md`.
