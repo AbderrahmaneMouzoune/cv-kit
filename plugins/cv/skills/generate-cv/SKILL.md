@@ -34,10 +34,10 @@ Règles communes de `references/base.md`, plus : dates exactement celles de `exp
 1. Partir de `assets/cv-template.html`. Appliquer `charte.couleur` et `charte.police` de `identite.md` (défaut `#141414`, sans-serif). Si `cv/` contient un CV récent, s'aligner sur sa mise en page.
 2. PDF via Chromium headless (Playwright `page.pdf(format="A4", print_background=True)`). Rien de coupé. Réduire la sélection plutôt que la police sous 9 pt.
 3. Remplissage :
-   - cible par défaut : 2 pages, dernière page remplie au moins aux trois quarts ;
+   - cible par défaut : 2 pages, dernière page remplie au moins aux trois quarts (75 % ou plus ; en dessous, c'est sous le seuil, pas « au seuil ») ;
    - si le contenu pertinent ne remplit pas 2 pages, passer à 1 page bien remplie plutôt que livrer une page à moitié vide ;
    - si 1 page est demandée : viser une page pleine ;
-   - mesurer après chaque PDF : hauteur du contenu en média print (`page.emulate_media(media="print")`, puis `document.body.scrollHeight`) rapportée à la hauteur utile d'une page (A4 moins les marges `@page`, environ 1017 px pour 297 mm moins 28 mm à 96 dpi) ; taux de la dernière page = reste de la division / hauteur utile ;
+   - mesurer sur le PDF généré, jamais sur la hauteur HTML (`scrollHeight` sous-estime : `break-inside: avoid` repousse des blocs entiers à la page suivante) : nombre de pages, puis position du bas du dernier texte de la dernière page (pdfplumber : `max(w["bottom"] for w in page.extract_words())`, ou PyMuPDF) ; taux = (bas du texte moins marge haute) / (hauteur de page moins marges haute et basse) ;
    - si le taux est trop faible : ajouter la réalisation pertinente suivante (ou un bloc projets perso ou missions freelance), régénérer et remesurer, 3 itérations maximum ;
    - si un ajout fait déborder d'une page la cible, le retirer et le noter comme « dépassement de page ».
 4. Version `cv.txt` pour les formulaires.
